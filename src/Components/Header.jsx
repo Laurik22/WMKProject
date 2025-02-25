@@ -15,7 +15,7 @@ function Header() {
       <Nav className='ms-auto mt-2' >     
       <Nav.Link href='#introduction' className='mx-2'>Miksi Japaniin?</Nav.Link>
       <Nav.Link href='#sights' className='mx-2'>Kohteet</Nav.Link>
-      <Nav.Link href='#introduction' className='mx-2' >Ruoka</Nav.Link>
+      <Nav.Link href='#food-culture' className='mx-2' >Ruoka</Nav.Link>
       <Nav.Link href='#introduction' className='mx-2'>Käytännön vinkit</Nav.Link>
       <Nav.Link href='#introduction' className='mx-2'>Ota yhteyttä</Nav.Link>          
       </Nav>

@@ -17,7 +17,7 @@ const LandingPage = () => {
             tutustu maan ainutlaatuiseen kulttuurin
           </p>
           <div className='d-grid mx-auto' style={{maxWidth: '450px'}}>
-            <Button className='mt-3 fw-bold shadow'variant='primary' size='lg'>
+            <Button className='mt-3 fw-bold shadow bg-danger text-white' size='lg'>
               Tutustu Kohteisiin
             </Button>
           </div>

@@ -8,7 +8,7 @@ import { BrowserRouter} from "react-router-dom";
 import { useEffect } from 'react';
 import './custom.scss';
 import Sights from './Sections/sights';
-
+import FoodCulture from './Sections/FoodCulture';
 
 
 function App() {
@@ -27,6 +27,9 @@ function App() {
       </section>
       <section>
       <Sights/>
+      </section>
+      <section>
+      <FoodCulture/>
       </section>
       </>
   )
