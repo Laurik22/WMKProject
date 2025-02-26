@@ -1,82 +1,62 @@
 import React from 'react';
-import { Container, Carousel, Card, Row, Col, Fade } from 'react-bootstrap';
+import { Container, Card, Row, Col, CardImg, CardImgOverlay, CardText, CardTitle, Button } from 'react-bootstrap';
 import fuji from '../assets/Fuji.webp';
-import ramen from '../assets/Ramen.webp';
 import hiroshima from '../assets/Hiroshima.webp';
-
-
+import tokyo from '../assets/Tokyo.webp';
+import osaka from '../assets/Osaka.webp';
+import kioto from '../assets/Kioto.webp';
 
 const Sights = () => {
   return (
     <Container id='sights'>
-      <h2 className='display-4 fw-bold text-center mb-4'>Nähtävyydet</h2>
-      <Carousel className='custom-carousel' interval={null} indicators={false}>
-        {/* Ensimmäinen ryhmä (3 korttia) */}
-        <Carousel.Item>
-          <Row className='justify-content-center'>
-            <Col xs={10} sm={6} md={4}>
-              <Card className='h-100 shadow'>
-                <Card.Img variant="top" src={fuji} />
-                <Card.Body>
-                  <Card.Title>Fuji-vuori</Card.Title>
-                  <Card.Text>Fuji-vuori on Japanin korkein vuori ja suosittu vaelluskohde.</Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col xs={10} sm={6} md={4} className='d-none d-sm-block'>
-              <Card className='h-100 shadow'>
-                <Card.Img variant="top" src={hiroshima} />
-                <Card.Body>
-                  <Card.Title>Hiroshima</Card.Title>
-                  <Card.Text>Hiroshima on tunnettu historiastaan ja rauhanpuistostaan.</Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col xs={10} md={4} className='d-none d-md-block'>
-              <Card className='h-100 shadow'>
-                <Card.Img variant="top" src={ramen} />
-                <Card.Body>
-                  <Card.Title>Ramen-museo</Card.Title>
-                  <Card.Text>Ramen-museo tarjoaa herkullisia elämyksiä ramenin ystäville.</Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-        </Carousel.Item>
-
-        {/* Toinen ryhmä (3 korttia) */}
-        <Carousel.Item>
-          <Row className='justify-content-center'>
-            <Col xs={10} sm={6} md={4}>
-              <Card className='h-100 shadow'>
-                <Card.Img variant="top" src={fuji} />
-                <Card.Body>
-                  <Card.Title>Kioto</Card.Title>
-                  <Card.Text>Kioto on tunnettu temppeleistään ja perinteisestä kulttuuristaan.</Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col xs={10} sm={6} md={4} className='d-none d-sm-block'>
-              <Card className='h-100 shadow'>
-                <Card.Img variant="top" src={fuji} />
-                <Card.Body>
-                  <Card.Title>Tokio</Card.Title>
-                  <Card.Text>Tokio on Japanin pääkaupunki ja modernin teknologian keskus.</Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col xs={10} md={4} className='d-none d-md-block'>
-              <Card className='h-100 shadow'>
-                <Card.Img variant="top" src={fuji} />
-                <Card.Body>
-                  <Card.Title>Osaka</Card.Title>
-                  <Card.Text>Osaka on kuuluisa ruoastaan ja vilkkaasta yöelämästään.</Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-          </Row>
-        </Carousel.Item>
-      </Carousel>
+      <Row className='justify-content-center'>
+        <Col className='mb-4' md={12}  >
+          <Card className='shadow'>
+            <CardImg src={tokyo} alt='Tokyo' style={{maxHeight:'500px'}}/>
+            <CardImgOverlay className= 'justify-content-center align-items-center d-flex flex-column'>
+              <CardTitle className='sights-textbg text-white display-3 fw-bold'>Tokyo</CardTitle>
+              <CardText className='sights-textbg text-white'>
+                Futuristinen metropoli täynnä kontrasteja, Shibuyan vilinästä Meiji-temppelin rauhaan.
+              </CardText>
+              <Button size='lg' variant='danger'>
+                Lue lisää
+              </Button>
+            </CardImgOverlay>
+          </Card>
+        </Col>
+      </Row>
+      <Row>
+        <Col className='mb-4'>
+          <Card className='shadow'>
+            <CardImg src={osaka} alt='Osaka' style={{ maxHeight: '500px'}} />
+            <CardImgOverlay className= 'justify-content-center align-items-center d-flex flex-column'>
+              <CardTitle className=' sights-textbg text-white display-3 fw-bold'>Osaka</CardTitle>
+              <CardText className='sights-textbg text-white'>
+              Historiallinen kaupunki, jossa Fushimi Inarin torii-portit ja Gionin geishakulttuuri hurmaavat.
+              </CardText>
+              <Button size='lg' variant='danger'>
+                Lue lisää
+              </Button>
+            </CardImgOverlay>
+          </Card>
+        </Col>
+      </Row>
+      <Row>
+        <Col className='mb-4'>
+          <Card className='shadow'>
+            <CardImg src={kioto} alt='Kioto' style={{ maxHeight: '500px'}} />
+            <CardImgOverlay className= 'justify-content-center align-items-center d-flex flex-column'>
+              <CardTitle className='sights-textbg text-white display-3 fw-bold'>Kioto</CardTitle>
+              <CardText className='t sights-textbg text-white'>
+              Perinteikäs ja kaunis kaupunki Japanissa, tunnettu temppeleistään, puutarhoistaan ja geishakulttuuristaan.
+              </CardText>
+              <Button size='lg' variant='danger'>
+                Lue lisää
+              </Button>
+            </CardImgOverlay>
+          </Card>
+        </Col>
+      </Row>
     </Container>
   );
 };

@@ -1,13 +1,13 @@
 import React from 'react';
 import { Container, Row, Col,Button } from 'react-bootstrap';
 import Header from '../Components/Header';
+import Introduction from './Introduction';
+import Sights from './sights';
 
 const LandingPage = () => {
   return (
+    <>
     <div className='landing-page-bg'>
-      <header>
-      <Header/>
-      </header>
     <Container fluid className='landing-page-content' >
         <Row className='align-items-center'>
           <Col md={5} >
@@ -17,7 +17,7 @@ const LandingPage = () => {
             tutustu maan ainutlaatuiseen kulttuurin
           </p>
           <div className='d-grid mx-auto' style={{maxWidth: '450px'}}>
-            <Button className='mt-3 fw-bold shadow bg-danger text-white' size='lg'>
+            <Button className='mt-3 shadow' variant='danger' href='#sights' size='lg'>
               Tutustu Kohteisiin
             </Button>
           </div>
@@ -25,7 +25,9 @@ const LandingPage = () => {
         </Row>
     </Container>
     </div>
-
+    <Introduction/>
+    <Sights></Sights>
+    </>
   );
 };
 

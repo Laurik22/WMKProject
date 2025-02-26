@@ -13,6 +13,7 @@ background-position: center;
 height: 100vh;
 color: white;
 position: relative;
+margin-bottom: 5em;
 }
 .landing-page-content{
   position: absolute;
@@ -25,10 +26,11 @@ position: relative;
   background:  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
   url('assets/sushi.webp') center/cover no-repeat;
   height: 75vh;
+  margin-bottom: 9em;
 }
 .food-content-bg{
-  background-color: rgba(14, 14, 14, 0.8);
-  margin-bottom: -3em;
+  background-color: rgba(243, 242, 242, 0.9);
+  margin-bottom: 1em;
 }
 .navbar .navbar-nav .nav-link{
   color: white !important;
@@ -36,24 +38,13 @@ position: relative;
 .navbar .navbar-nav .nav-link:hover {
   color: rgba(172, 172, 172, 0.7) !important; /* Hover-väri */
 }
-.custom-carousel .carousel-control-prev{
-  left: -5%;
-}
-.custom-carousel .carousel-control-next{
-  right: -5%;
+.tips-section{
+  margin-top: 8em;
 }
 
-.custom-carousel .carousel-control-prev-icon,
-.custom-carousel .carousel-control-next-icon {
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 50%;
+.sights-textbg{
+  background-color: rgb(14, 14, 14,0.8);
 }
-
-
-section {
-  margin-bottom: 100px;
-}
-
 
 
 
