@@ -22,11 +22,13 @@ position: relative;
   text-align: center;
 }
 .food-section{
-  background:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  background:  linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
   url('assets/sushi.webp') center/cover no-repeat;
+  height: 75vh;
 }
 .food-content-bg{
-  opacity: 0.9;
+  background-color: rgba(14, 14, 14, 0.8);
+  margin-bottom: -3em;
 }
 .navbar .navbar-nav .nav-link{
   color: white !important;
