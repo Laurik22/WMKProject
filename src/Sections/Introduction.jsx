@@ -8,8 +8,8 @@ import hiroshima from '../assets/Hiroshima.webp';
 const Introduction = () => {
   return (
       <Container  id='introduction'>
-        <Row className='mb-3 text-center justify-content-center'>
-          <Col >
+        <Row className='mb-3 text-start justify-content-center'>
+          <Col md={9}> 
             <h2 className='display-5 fw-bold pb-2'>Miksi matkustaa Japaniin?</h2>
             <p >
             Japani on ainutlaatuinen matkakohde, jossa perinteet ja moderni teknologia 
@@ -24,8 +24,15 @@ const Introduction = () => {
               kulttuuriin, herkulliseen ruokaan ja upeisiin nähtävyyksiin, jotta voit 
               suunnitella täydellisen matkan tähän lumoavaan maahan. 
             </p>
+            <p>
+            Lorem ipsum odor amet, consectetuer adipiscing elit. Ac in dapibus ultrices convallis massa nisi. Netus vel condimentum congue ante dis eget senectus torquent. Tortor viverra vestibulum senectus cursus volutpat suscipit integer. Sapien platea sed egestas mauris commodo blandit, aliquam iaculis sed. Elementum sollicitudin sociosqu fames porttitor ultrices fames rhoncus. Vivamus a lacus est odio odio blandit.
+            </p>
+            <p>
+            Laoreet nullam maximus purus ultricies aliquam et dui mauris. Laoreet mauris condimentum fames ut elementum. Cras euismod maximus metus elementum quis. Dis volutpat senectus, id senectus nunc augue. Pulvinar montes viverra leo sed nostra efficitur nam neque. Eu leo pellentesque semper et etiam feugiat netus. Nascetur mattis lacinia laoreet volutpat ac maximus elementum.
+            </p>
           </Col>
         </Row>
+        
         <Row className='justify-content-center'>
           <Col md={3} sm={4} xs={6} className='mb-4'>
             <Card>

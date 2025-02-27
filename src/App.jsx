@@ -10,6 +10,8 @@ import './custom.scss';
 import Sights from './Sections/sights';
 import FoodCulture from './Sections/FoodCulture';
 import Tips from './Sections/Tips';
+import Footer from './Components/Footer';
+
 function App() {
   
   useEffect(() => {
@@ -20,13 +22,14 @@ function App() {
       <>
       <BrowserRouter>
       <header>
-      <Header />
-      </header>
+    <Header></Header>
+    </header>
         <Routes>
           <Route path="/" element={<LandingPage />} />
           <Route path="/food-culture" element={<FoodCulture />} />
           <Route path="/tips" element={<Tips />} />
         </Routes>
+          <Footer />
       </BrowserRouter>
       </>
   )

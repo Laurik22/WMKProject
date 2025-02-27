@@ -39,7 +39,10 @@ margin-bottom: 5em;
   color: rgba(172, 172, 172, 0.7) !important; /* Hover-väri */
 }
 .tips-section{
-  margin-top: 8em;
+  margin-top: 5em;
+}
+section{
+  margin-bottom: 5em;
 }
 
 .sights-textbg{
