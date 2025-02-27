@@ -4,7 +4,10 @@
   width: 100%;
   font-family: 'Monteserrat', sans-serif;
 }
-
+.Header{
+  margin-bottom: 3em;
+}
+        
 .landing-page-bg{
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
   url('assets/Taustakuva.webp') center/cover no-repeat;
@@ -32,12 +35,22 @@ margin-bottom: 5em;
   background-color: rgba(243, 242, 242, 0.9);
   margin-bottom: 1em;
 }
-.navbar .navbar-nav .nav-link{
-  color: white !important;
+.Dest-page{
+margin-top: 8em;
 }
+.navbar{
+
+  background-color: #000000 !important;
+}
+.navbar .navbar-nav .nav-link{
+  color: rgb(255, 255, 255) !important;
+}
+
 .navbar .navbar-nav .nav-link:hover {
   color: rgba(172, 172, 172, 0.7) !important; /* Hover-väri */
+
 }
+
 .tips-section{
   margin-top: 5em;
 }

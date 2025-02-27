@@ -9,7 +9,7 @@ const Introduction = () => {
   return (
       <Container  id='introduction'>
         <Row className='mb-3 text-start justify-content-center'>
-          <Col md={9}> 
+          <Col md={10}> 
             <h2 className='display-5 fw-bold pb-2'>Miksi matkustaa Japaniin?</h2>
             <p >
             Japani on ainutlaatuinen matkakohde, jossa perinteet ja moderni teknologia 

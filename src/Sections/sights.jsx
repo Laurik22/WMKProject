@@ -7,10 +7,11 @@ import osaka from '../assets/Osaka.webp';
 import kioto from '../assets/Kioto.webp';
 
 const Sights = () => {
+  
   return (
     <Container id='sights'>
       <Row className='justify-content-center'>
-        <Col className='mb-4' md={12}  >
+        <Col className='mb-4' md={10} >
           <Card className='shadow'>
             <CardImg src={tokyo} alt='Tokyo' style={{maxHeight:'500px'}}/>
             <CardImgOverlay className= 'justify-content-center align-items-center d-flex flex-column'>
@@ -25,8 +26,8 @@ const Sights = () => {
           </Card>
         </Col>
       </Row>
-      <Row>
-        <Col className='mb-4'>
+      <Row className='justify-content-center'>
+        <Col className='mb-4' md={10}>
           <Card className='shadow'>
             <CardImg src={osaka} alt='Osaka' style={{ maxHeight: '500px'}} />
             <CardImgOverlay className= 'justify-content-center align-items-center d-flex flex-column'>
@@ -41,8 +42,8 @@ const Sights = () => {
           </Card>
         </Col>
       </Row>
-      <Row>
-        <Col className='mb-4'>
+      <Row className='justify-content-center'>
+        <Col className='mb-4' md={10}>
           <Card className='shadow'>
             <CardImg src={kioto} alt='Kioto' style={{ maxHeight: '500px'}} />
             <CardImgOverlay className= 'justify-content-center align-items-center d-flex flex-column'>
